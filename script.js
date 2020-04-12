@@ -36,13 +36,13 @@ const getResult = (operand1, operand2, operator) => {
 const getSymbol = (operator) => {
     switch (operator) {
         case 'multiply': 
-            return '*';
+            return 'x';
         case 'add':
             return '+';
         case 'subtract':
             return '-';
         case 'divide':
-            return '/';
+            return '%';
     }
 }
 
