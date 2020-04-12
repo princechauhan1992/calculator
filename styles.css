@@ -12,7 +12,7 @@
 }
 
 .result {
-    background-color:#350f3f;
+    background-color: black;
     text-align: end;
     color: white;
     height: 130px;
@@ -26,34 +26,37 @@
     width: 100px;
     height: 100px;
     display: block;
-    font-size: 125%;
-    border: 1px solid #350f3f
+    font-size: 35px;
+    border: 1px solid #350f3f;
 }
 
+
 .number {
-    background-color:#ebb424;
-    color: #350f3f;
+    background-color: #d8d9db;
+}
+
+.number:hover {
+    background-color: #b8b9bb;
 }
 
 .number:focus {
-    outline: none;
- }
+    outline-color: #d8d9db;
+}
+
 
 
 .action {
-    background-color:#49c39e;
-    color: #350f3f;
+    background-color: #df974c;
+    color: white;
  }
 
+ .action:hover {
+    background-color: #efa97c;
+}
 
- .button:hover {
-    background-color:#e51670;
-    color:white;
- }
-
- .button.action:focus {
-    outline: none;
- }
+.action:focus {
+    outline-color: #df974c
+}
 
 
 .fifty-percent {
