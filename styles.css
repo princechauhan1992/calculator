@@ -27,20 +27,22 @@
     height: 100px;
     display: block;
     font-size: 125%;
+    border: 1px solid #350f3f
 }
 
 .number {
     background-color:#ebb424;
+    color: #350f3f;
 }
 
- .button.number:focus {
+.number:focus {
     outline: none;
  }
 
 
- .button.action {
+.action {
     background-color:#49c39e;
-    color:white;
+    color: #350f3f;
  }
 
 
