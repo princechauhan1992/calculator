@@ -13,8 +13,11 @@
 
 .result {
     background-color:#350f3f;
-    justify-content: flex-end;
+    text-align: end;
     color: white;
+    height: 130px;
+    flex-direction: column;
+    justify-content: center;
     padding: 8px;
     box-sizing: border-box;
 }
