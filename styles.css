@@ -12,7 +12,7 @@
 }
 
 .result {
-    background-color: #333333;
+    background-color:#350f3f;
     justify-content: flex-end;
     color: white;
     padding: 8px;
@@ -27,20 +27,22 @@
 }
 
 .number {
-    background-color: lightblue;
+    background-color:#ebb424;
 }
-
-.button.number:hover {
-    background-color: blue;
-    color:white;
- }
 
  .button.number:focus {
     outline: none;
  }
 
- .button.action:hover {
-    background-color: grey;
+
+ .button.action {
+    background-color:#49c39e;
+    color:white;
+ }
+
+
+ .button:hover {
+    background-color:#e51670;
     color:white;
  }
 
