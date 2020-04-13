@@ -8,7 +8,6 @@ let canEnterNumber;
 let canEnterOperation;
 let operand1;
 let operator;
-let resultString;
 
 const initializeParams = () => {
     restart = false;
@@ -16,8 +15,6 @@ const initializeParams = () => {
     canEnterOperation = false;
     operand1 = null;
     operator = null;
-    resultString = '0';
-
 }
 
 const getResult = (operand1, operand2, operator) => {
