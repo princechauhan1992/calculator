@@ -20,7 +20,7 @@ const initializeParams = () => {
 const getResult = (operand1, operand2, operator) => {
 	switch (operator) {
 		case 'multiply':
-			return operand1 * operand2;
+			return (operand1 * operand2).toFixed(3).replace(/(\.\d*?[1-9])0+$/g, '$1');
 		case 'add':
 			return operand1 + operand2;
 		case 'subtract':
@@ -75,7 +75,7 @@ const addButtonListeners = () => {
 				const result = document.getElementById('result-value');
 				const resultString = document.getElementById('result-string');
 				let currentText = result.innerText;
-				if (Number(result.innerText) === 0) {
+				if (Number(result.innerText) === 0 && result.innerText.length <= 1) {
 					currentText = '';
 				}
 				const finalText = `${currentText}${button.innerText}`;
