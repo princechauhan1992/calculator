@@ -20,13 +20,13 @@ const initializeParams = () => {
 const getResult = (operand1, operand2, operator) => {
 	switch (operator) {
 		case 'multiply':
-			return (operand1 * operand2).toFixed(3).replace(/(\.\d*?[1-9])0+$/g, '$1');
+			return Number((operand1 * operand2).toFixed(3))
 		case 'add':
 			return operand1 + operand2;
 		case 'subtract':
 			return operand1 - operand2;
 		case 'divide':
-			return (operand1 / operand2).toFixed(3).replace(/(\.\d*?[1-9])0+$/g, '$1');
+			return Number((operand1 / operand2).toFixed(3))
 	}
 };
 
