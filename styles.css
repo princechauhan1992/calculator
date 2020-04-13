@@ -3,19 +3,19 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
-    width:400px;
+    width:320px;
 }
 .layout {
     display: flex;
     flex-direction: column;
     align-content: center;
-    height:625px;
+    height:525px;
 }
 
 .row {
     display: flex;
     align-items: stretch;
-    height: 100px;
+    height: 80px;
 }
 
 
@@ -40,12 +40,12 @@
 }
 
 .button {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: block;
     font-weight: bold;
-    font-size: 35px;
-    border: 1px solid #000000;
+    font-size: 30px;
+    border: 1.25px solid #000000;
     text-shadow: 0 -1px 0 slategrey;
     cursor: pointer;
 }
