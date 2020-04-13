@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     width: 320px;
+    font-family: 'Helvetica Light';
 }
 
 .layout {
@@ -45,16 +46,17 @@
     width: 80px;
     height: 80px;
     display: block;
-    font-weight: bold;
     font-size: 30px;
+    font-weight: lighter;
     border: 1.25px solid #000000;
-    text-shadow: 0 -1px 0 slategrey;
     cursor: pointer;
+
 }
 
 
 .number {
-    background-color: #808080;
+    background-color: #d4d4d2;
+    color: black;
 }
 
 .number:hover {
