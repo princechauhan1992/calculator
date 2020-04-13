@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "format": "prettier --print-width 160 --write \"**/*.{js, html}\""
   },
   "build": {
     "appId": "com.electron.calculator"
@@ -25,9 +26,18 @@
   "devDependencies": {
     "@types/electron": "^1.6.10",
     "electron": "^8.2.1",
-    "electron-builder": "^22.4.1"
+    "electron-builder": "^22.4.1",
+    "prettier": "^2.0.4"
   },
-  "dependencies": {
-    
+  "dependencies": {},
+  "prettier": {
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "useTabs": true,
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true,
+    "parser": "typescript",
+    "arrowParens": "always"
   }
 }
