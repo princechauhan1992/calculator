@@ -2,13 +2,14 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding:0;
 }
 .layout {
     display: flex;
     flex-direction: column;
     align-content: center;
     width: 400px;
-    height:630px;
+    height:625px;
 }
 
 .row {
@@ -26,7 +27,7 @@
     display: inline-block;
     font-size: 35px;
     text-align: right;
-    padding: 8px;
+    padding-right: 8px;
 }
 
 #result-value {
@@ -36,7 +37,7 @@
     font-size: 20px;
     display: inline-block;
     text-align: right;
-    padding: 8px;
+    padding-right: 8px;
 }
 
 .button {
