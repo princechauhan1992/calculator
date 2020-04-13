@@ -1,15 +1,15 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
-    padding:0;
-    width:320px;
+    padding: 0;
+    width: 320px;
 }
+
 .layout {
     display: flex;
     flex-direction: column;
     align-content: center;
-    height:525px;
+    height: 525px;
 }
 
 .row {
@@ -20,7 +20,7 @@
 
 
 #result-string {
-    background-color: black;
+    background-color: #1c1c1c;
     height: 75px;
     color: white;
     display: inline-block;
@@ -31,7 +31,7 @@
 }
 
 #result-value {
-    background-color: black;
+    background-color: #1c1c1c;
     height: 50px;
     color: white;
     font-size: 16px;
@@ -54,11 +54,12 @@
 
 
 .number {
-    background-color: #d8d9db;
+    background-color: #808080;
 }
 
 .number:hover {
-    background-color: #b8b9bb;
+    background-color: #b0b0b0;
+    opacity: 80%;
 }
 
 .number:focus {
@@ -68,12 +69,12 @@
 
 
 .action {
-    background-color: #df974c;
+    background-color: #FF9500;
     color: white;
- }
+}
 
- .action:hover {
-    background-color: #dfb07e;
+.action:hover {
+    opacity: 50%
 }
 
 
