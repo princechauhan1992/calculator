@@ -6,6 +6,7 @@ let canEnterNumber;
 let canEnterOperation;
 let operand1;
 let operator;
+let canAddDecimal;
 
 const initializeParams = () => {
 	restart = false;
@@ -13,6 +14,7 @@ const initializeParams = () => {
 	canEnterOperation = false;
 	operand1 = null;
 	operator = null;
+	canAddDecimal = true;
 };
 
 const getResult = (operand1, operand2, operator) => {
@@ -24,7 +26,7 @@ const getResult = (operand1, operand2, operator) => {
 		case 'subtract':
 			return operand1 - operand2;
 		case 'divide':
-			return Math.floor(operand1 / operand2);
+			return (operand1 / operand2).toFixed(3).replace(/(\.\d*?[1-9])0+$/g, '$1');
 	}
 };
 
@@ -58,6 +60,7 @@ const calculate = (operation) => {
 		canEnterOperation = false;
 		canEnterNumber = true;
 		restart = true;
+		canAddDecimal = true;
 	}
 };
 
@@ -66,6 +69,9 @@ const addButtonListeners = () => {
 	for (const button of buttons) {
 		button.addEventListener(clickEvent, () => {
 			if (canEnterNumber) {
+				if (!canAddDecimal && button.innerText === '.') {
+					return;
+				}
 				const result = document.getElementById('result-value');
 				const resultString = document.getElementById('result-string');
 				let currentText = result.innerText;
@@ -80,6 +86,9 @@ const addButtonListeners = () => {
 				}
 				if (resultString.innerText === '0') {
 					resultString.innerText = '';
+				}
+				if (button.innerText === '.') {
+					canAddDecimal = false;
 				}
 				resultString.innerText = resultString.innerText + button.innerText;
 				canEnterOperation = true;
@@ -138,6 +147,10 @@ const addBackListener = () => {
 			resultString.innerText = '0';
 			canEnterOperation = false;
 		} else {
+			const length = result.innerText.length;
+			if (result.innerText[result.innerText.length - 1] === '.') {
+				canAddDecimal = true;
+			}
 			result.innerText = result.innerText.substr(0, result.innerText.length - 1);
 			resultString.innerText = result.innerText;
 			operator = null;
