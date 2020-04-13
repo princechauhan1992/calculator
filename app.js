@@ -1,4 +1,7 @@
-const { app, BrowserWindow } = require('electron');
+const {
+	app,
+	BrowserWindow
+} = require('electron');
 
 const createWindow = () => {
 	// Create the browser window.
@@ -8,11 +11,11 @@ const createWindow = () => {
 		webPreferences: {
 			nodeIntegration: true,
 		},
+		maximizable: false,
+		resizable: false,
 	});
 
-	// and load the index.html of the app.
 	win.loadFile('index.html');
-	win.setMaximizable(false);
 };
 
 app.whenReady().then(createWindow);
