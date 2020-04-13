@@ -43,8 +43,11 @@
     width: 100px;
     height: 100px;
     display: block;
+    font-weight: bold;
     font-size: 35px;
-    border: 1px solid #350f3f;
+    border: 1px solid #000000;
+    text-shadow: 0 -1px 0 slategrey;
+    cursor: pointer;
 }
 
 
@@ -57,7 +60,7 @@
 }
 
 .number:focus {
-    outline-color: #d8d9db;
+    outline: none;
 }
 
 
@@ -73,7 +76,7 @@
 
 
 .action:focus {
-    outline-color: #df974c
+    outline: none;
 }
 
 .fifty-percent {
