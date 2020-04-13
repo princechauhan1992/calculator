@@ -70,7 +70,10 @@ const addButtonListeners = () => {
             if (canEnterNumber) {
                 const result = document.getElementById('result-value');
                 const resultString = document.getElementById('result-string');
-                const currentText = Number(result.innerText) ? result.innerText : '';
+                let currentText = result.innerText
+                if (Number(result.innerText) === 0) {
+                    currentText = ''
+                }
                 const finalText = `${currentText}${button.innerText}`;
                 if (restart) {
                     result.innerText = button.innerText;
