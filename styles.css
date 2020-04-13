@@ -3,19 +3,18 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
+    width:400px;
 }
 .layout {
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 400px;
     height:625px;
 }
 
 .row {
     display: flex;
     align-items: stretch;
-    width: 100%;
     height: 100px;
 }
 
