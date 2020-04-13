@@ -1,3 +1,4 @@
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -51,13 +52,13 @@
  }
 
  .action:hover {
-    background-color: #efa97c;
+    background-color: #dfb07e;
 }
+
 
 .action:focus {
     outline-color: #df974c
 }
-
 
 .fifty-percent {
     width: 50%;
