@@ -33,13 +33,13 @@ const getResult = (operand1, operand2, operator) => {
 const getSymbol = (operator) => {
     switch (operator) {
         case 'multiply': 
-            return 'x';
+            return 	String.fromCharCode(215);
         case 'add':
             return '+';
         case 'subtract':
             return '-';
         case 'divide':
-            return '%';
+            return String.fromCharCode(247);
     }
 }
 
