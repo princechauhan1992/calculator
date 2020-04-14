@@ -22,9 +22,9 @@ const getResult = (operand1, operand2, operator) => {
 		case 'multiply':
 			return Number((operand1 * operand2).toFixed(3))
 		case 'add':
-			return operand1 + operand2;
+			return Number((operand1 + operand2).toFixed(3))
 		case 'subtract':
-			return operand1 - operand2;
+			return Number((operand1 - operand2).toFixed(3));
 		case 'divide':
 			return Number((operand1 / operand2).toFixed(3))
 	}
